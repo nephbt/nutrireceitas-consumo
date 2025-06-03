@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.consumonutrireceitas.controller.InicioController"
+            prefHeight="400.0" prefWidth="400.0">
+
+    <children>
+        <TextField fx:id="emailField" layoutX="126.0" layoutY="159.0" />
+        <TextField fx:id="senhaField" layoutX="126.0" layoutY="230.0" />
+        <Button fx:id="loginButton" layoutX="175.0" layoutY="277.0" mnemonicParsing="false" text="Login" />
+        <Button fx:id="cadastreButton" layoutX="103.0" layoutY="329.0" mnemonicParsing="false" text="Não possui uma conta? Cadastre!" />
+        <Text layoutX="126.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+        <Text layoutX="126.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" />
+        <Text layoutX="120.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu de Login">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+    </children>
+
+</AnchorPane>

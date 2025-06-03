@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.consumonutrireceitas.controller.ReceitaController">
+
+    <top>
+        <Label text="Cadastro de Receitas" style="-fx-font-size: 24px; -fx-padding: 10;" BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <GridPane hgap="10" vgap="10">
+                <Label text="Nome:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="nomeField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="Ingredientes:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="ingredientesField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                <Label text="Serve:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="serveField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                <Label text="Descrição:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <TextField fx:id="descricaoField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                <Label text="Tempo de Preparo:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <TextField fx:id="tempoPreparoField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                <Button text="Salvar Receita"
+                        fx:id="salvarButton"
+                        GridPane.rowIndex="5" GridPane.columnIndex="1"
+                        GridPane.halignment="RIGHT"/>
+            </GridPane>
+        </VBox>
+    </center>
+
+    <bottom>
+        <TableView fx:id="tabelaReceitas" prefHeight="200" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn text="Nome" fx:id="nomeColumn" prefWidth="150"/>
+                <TableColumn text="Ingredientes" fx:id="ingredientesColumn" prefWidth="200"/>
+                <TableColumn text="Serve" fx:id="serveColumn" prefWidth="60"/>
+                <TableColumn text="Descrição" fx:id="descricaoColumn" prefWidth="200"/>
+                <TableColumn text="Tempo" fx:id="tempoColumn" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </bottom>
+</BorderPane>
