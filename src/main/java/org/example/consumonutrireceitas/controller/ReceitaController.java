@@ -22,6 +22,7 @@ public class ReceitaController {
     @FXML private TextField serveField;
     @FXML private TextField descricaoField;
     @FXML private TextField tempoPreparoField;
+    @FXML private Button salvarButton;
 
     @FXML private TableView<Receita> tabelaReceitas;
     @FXML private TableColumn<Receita, String> nomeColumn;
@@ -43,6 +44,7 @@ public class ReceitaController {
         tempoColumn.setCellValueFactory(new PropertyValueFactory<>("tempoPreparo"));
 
         tabelaReceitas.setItems(receitas);
+        salvarButton.setOnAction(actionEvent -> salvarReceita());
 
         carregarReceitas();
     }
