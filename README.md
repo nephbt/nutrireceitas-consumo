@@ -33,3 +33,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 🔁 **EXECUTANDO O CONSUMO**
 
 - 📁 Rode o arquivo **"src/main/java/org/example/consumonutrireceitas/HelloApplication.java"** e inicie o consumo
+
+➡️ **EM BREVE**
+
+- Funções "editar" e "excluir" para as receitas.
