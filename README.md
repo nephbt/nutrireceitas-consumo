@@ -9,13 +9,13 @@ POO com Banco de Dados - PUC Goiás
 
 📌 Este código é um **complemento** da seguinte API: [nutrireceitas-api (GitHub)](https://github.com/nephbt/nutrireceitas-api);
   
-⚙️ ESPECIFICAÇÕES
+⚙️ **ESPECIFICAÇÕES**
 
 - ☕ Java: 21.0.3;
 - 🔧 Estar com o banco de dados da api configurado
 (confira "CONFIGURANDO O BANCO DE DADOS" de seu README)
 
-🛠 TECNOLOGIAS
+🛠 **TECNOLOGIAS**
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - Java 21 – Linguagem principal do projeto
@@ -30,6 +30,6 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - Maven – Gerenciador de dependências e build
 - JavaFX Maven Plugin – Plugin para empacotamento e execução da aplicação JavaFX via Maven
 
-🔁 EXECUTANDO O CONSUMO
+🔁 **EXECUTANDO O CONSUMO**
 
 - 📁 Rode o arquivo **"src/main/java/org/example/consumonutrireceitas/HelloApplication.java"** e inicie o consumo
